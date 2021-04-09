@@ -1,13 +1,9 @@
 # What's the Weather Like?
 
-
-
 ## Weather Models
-- - -
 ### Objective 
 "What's the weather like as we approach the equator?" Sure, it is common knowledge that it is warm at the equator and cold at the poles, but, how could we prove it? 
 ![Equator](Images/equatorsign.png)
-
 ### Tasks
 1. Generate 500+, non-repeating cities across Earth based on latitude/longitude and varying distances from the equator by utilizing a [simple Python library](https://pypi.python.org/pypi/citipy)
 2. Perform a weather check on each of the cities using a series of successive API calls from [OpenWeatherMap API](https://openweathermap.org/api)
@@ -27,42 +23,26 @@
     * Northern Hemisphere - Wind Speed (mph) vs. Latitude
   * Southern Hemisphere - Wind Speed (mph) vs. Latitude
 6. Save a CSV of all retrieved data and a PNG image for each scatter plot.
+7. Provide written descriptions of three observable trends based on the data.
 
 ## Vacation Spot Selection
-- - -
 ### Objective
 Use jupyter-gmaps and the Google Places API for this part of the assignment.
 
-
 ### Tasks
-
-* Create a heat map that displays the humidity for every city from the part I of the homework.
-
+1. Create a heat map that displays the humidity for every city from the part I of the homework.
   ![heatmap](Images/heatmap.png)
 
-* Narrow down the DataFrame to find your ideal weather condition. For example:
-
+2. Narrow down the DataFrame to find your ideal weather condition. For example:
   * A max temperature lower than 80 degrees but higher than 70.
-
   * Wind speed less than 10 mph.
-
   * Zero cloudiness.
-
   * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
+3. Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
 
-  * **Note:** Feel free to adjust to your specifications but be sure to limit the number of rows returned by your API requests to a reasonable number.
-
-* Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
-
-* Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
-
+4. Plot the hotels on top of the humidity heatmap with each pin containing, at minimum **Hotel Name**, **City**, and **Country**.
   ![hotel map](Images/hotel_map.png)
 
-As final considerations:
-* For Part I, you must include a written description of three observable trends based on the data.
-* For Part II, you must include a screenshot of the heatmap you create and include it in your submission.
-* You must use proper labeling of your plots, including aspects like: Plot Titles (with date of analysis) and Axes Labels.
-* For max intensity in the heat map, try setting it to the highest humidity found in the data set.
 
 
 
