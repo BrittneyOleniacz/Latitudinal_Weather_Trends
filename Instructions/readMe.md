@@ -30,16 +30,13 @@
 Use jupyter-gmaps and the Google Places API for this part of the assignment.
 
 ### Tasks
-1. Create a heat map that displays the humidity for every city from the part I of the homework.
-  ![heatmap](Images/heatmap.png)
-
+1. Create a heat map that displays the humidity for every city.
 2. Narrow down the DataFrame to find your ideal weather condition. For example:
-  * A max temperature lower than 80 degrees but higher than 70.
-  * Wind speed less than 10 mph.
-  * Zero cloudiness.
-  * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
+   * A max temperature lower than 80 degrees but higher than 70.
+   * Wind speed less than 10 mph.
+   * Zero cloudiness.
+   * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
 3. Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
-
 4. Plot the hotels on top of the humidity heatmap with each pin containing, at minimum **Hotel Name**, **City**, and **Country**.
   ![hotel map](Images/hotel_map.png)
 
